@@ -1,0 +1,7 @@
+name: SlimeChunkFinder
+main: io.github.nulling.SlimeChunkFinder
+description: Allows players to locate slime chunks
+author: nulling
+website: https://github.com/nulling/SlimeChunkFinder
+database: false
+version: 1.0
