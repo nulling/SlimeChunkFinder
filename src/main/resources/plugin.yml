@@ -5,3 +5,22 @@ author: nulling
 website: https://github.com/nulling/SlimeChunkFinder
 database: false
 version: 1.0
+api-version: 1.15
+commands:
+  scf:
+    description: Toggles slime chunk finding for you or another player
+    usage: /scf [player]
+    permission: scf.toggle
+    permission-message: You don't have permission to execute this command!
+permissions:
+  scf.*:
+    description: Gives access to all variants of SlimeChunkFinder command
+    children:
+      scf.toggle: true
+      scf.toggleother: true
+  scf.toggle:
+    description: Allows the user with the permission to toggle slime chunk finding
+    default: true
+  scf.toggleother:
+    description: Allows the user with the permission to toggle slime chunk finding for another user
+    default: op
